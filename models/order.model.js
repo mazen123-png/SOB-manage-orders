@@ -39,6 +39,14 @@ const orderSchema = new mongoose.Schema({
     comments: {
         type: String,
         required: true
+    },
+    ProductName:{
+        type: String,
+        required: true
+    },
+    totalPrice:{
+        type: Number,
+        required: true
     }
 })
 const orderModel = mongoose.model('Order',orderSchema)
