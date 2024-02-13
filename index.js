@@ -7,9 +7,9 @@ app.use(express.json())
 const _PORT = "3001"
 
 const mongoose = require('mongoose')
-const url = process.env.URL
+const url = "mongodb+srv://MazenStartOnline:WC5ZYHuccWLKmkYR@startonlineorders.xiytpaf.mongodb.net/orders"
 
-mongoose.connect(url)
+mongoose.connect("mongodb+srv://MazenStartOnline:WC5ZYHuccWLKmkYR@startonlineorders.xiytpaf.mongodb.net/StartOnlineBusinness")
 const orderModel = require('./models/order.model')
 
 app.get('/orders',async (req,res)=>{
